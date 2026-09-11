@@ -5,7 +5,7 @@ export function Hero() {
     <section className="w-full bg-white">
       <div className="mx-auto flex min-h-[calc(100vh-80px)] max-w-7xl items-center px-6 py-16 lg:px-8 lg:py-20">
 
-        {/* Hero Text */}
+       
         <div className="w-full lg:w-1/2">
 
           <h1 className="max-w-2xl text-5xl font-bold leading-tight tracking-tight text-gray-900 sm:text-6xl lg:text-6xl">
@@ -29,7 +29,7 @@ export function Hero() {
 
         </div>
 
-        {/* Hero Image */}
+       
         <div className="mt-12 flex w-full items-center justify-center lg:mt-0 lg:w-1/2">
           <img
             src={hero}
