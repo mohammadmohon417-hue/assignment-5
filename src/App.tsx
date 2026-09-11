@@ -1,8 +1,13 @@
+import { Hero } from "./assets/component/hero";
 import { Nav } from "./assets/component/nav";
 
 function App() {
   return (
-    <Nav></Nav>
-  )
+    <>
+      <Nav />
+      <Hero />
+    </>
+  );
 }
+
 export default App;
