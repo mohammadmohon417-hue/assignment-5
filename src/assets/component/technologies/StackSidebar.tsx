@@ -20,7 +20,6 @@ type Props = {
 export function StackSidebar({ stack, onRemove, onRemoveAll }: Props) {
   return (
     <div className="rounded-xl border border-gray-200 bg-white shadow-sm">
-      {/* Header */}
       <div className="border-b border-gray-100 p-5">
         <h3 className="text-lg font-bold text-gray-900">Your Stack</h3>
 
@@ -29,7 +28,6 @@ export function StackSidebar({ stack, onRemove, onRemoveAll }: Props) {
         </p>
       </div>
 
-      {/* Stack Content */}
       <div className="p-4">
         {stack.length === 0 ? (
           <div className="rounded-lg border border-dashed border-gray-200 p-8 text-center">
@@ -46,7 +44,6 @@ export function StackSidebar({ stack, onRemove, onRemoveAll }: Props) {
                 key={technology.id}
                 className="flex items-center gap-3 rounded-lg border border-gray-100 p-3"
               >
-                {/* Icon */}
                 <div className="h-10 w-10 rounded-lg bg-gray-50 p-2">
                   <img
                     src={technology.icon}
@@ -55,14 +52,12 @@ export function StackSidebar({ stack, onRemove, onRemoveAll }: Props) {
                   />
                 </div>
 
-                {/* Name */}
                 <div className="flex-1">
                   <h4 className="text-sm font-bold">{technology.name}</h4>
 
                   <p className="text-xs text-gray-400">{technology.category}</p>
                 </div>
 
-                {/* Remove X */}
                 <button
                   onClick={() => onRemove(technology.id)}
                   className="text-gray-400 hover:text-red-500"
@@ -74,7 +69,6 @@ export function StackSidebar({ stack, onRemove, onRemoveAll }: Props) {
           </div>
         )}
 
-        {/* Remove All Button */}
         {stack.length > 0 && (
           <button
             onClick={onRemoveAll}
